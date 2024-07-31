@@ -1,0 +1,176 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>oretopcakesnevent</title>
+        <link rel="stylesheet" href="style.css">
+        </head>
+        <body class="pic">
+                <h1 class="rftg">
+                <h2 class="weet">
+
+                        <img src="logo.jpg" class="sly">
+                        <a href="cake.html" class="rtyui">SAME DAY CAKES</a>
+                          <div class="custom-dropdown">
+                              <button class="none">Cakes</button>
+                            <div id="caDropdown" class="dropdown-content">
+                              <div class="tom-dropdown">
+                                  <button class="edfg">By Type &<br>By Flavour</button><br>
+                                  <div id="caDropdown" class="drodown-content">   
+                                      <h2 class="ty">
+                                          <button class="drd">By Type</button><br>
+                                          <a href="cake.html" class="sdfgh">All Cakes</a><br>
+                                          <a href="cake.html" class="dfgh">Affordable Cakes</a><br>
+                                          <a href="cake.html" class="sdfh">Standard Cakes</a><br>
+                                          <a href="cake.html" class="sdfg">Kids Cakes</a><br>
+                                          <a href="cake.html" class="sdffg">Others..</a><br>
+                                          <button class="drd">By Flavours</button><br>
+                                          <a href="cake.html" class="sdfgg">Vanilla Cakes</a><br>
+                                          <a href="cake.html" class="sdfg">Red Velvet Cakes</a><br>
+                                          <a href="cake.html" class="sdfg">Chocolate Cakes</a><br>
+                                          <a href="cake.html" class="sdfg">Others..</a><br>
+                                      </h2> 
+                            </div>
+                          </div> 
+                      </div>
+                      </div>
+                      <div class="cussutom-dropdown">
+                          <button class="noone">Flower</button>
+                        <div id="caDropdown" class="droppdown-content">   
+                           <h3 class="tyby">
+                              <a href="gifts.html" class="kkk">Hand-Tied Bouquets</button><br> 
+                           <a href="gifts.html" class="kkhk">Flower Boxes</button>
+                                     </h3>        
+                        </div>
+                      </div> 
+                      <a href="cake.html" class="hgfh">Cupcakes</a>
+                        <div class="custom-dropppdown">
+                            <button class="nooone">Gifts</button>
+                          <div id="caDropdown" class="dropppdown-content">
+                                  <h2> 
+                                      <a href="cake.html" class="hgb">Combos</a><br>
+                                      <a href="cake.html" class="lok">Chocolate & Cookies</a><br>
+                                      <a href="cake.html" class="kok">Champagnes & Wines</a><br>
+                                      <a href="cake.html" class="fre">Balloons</a><br>
+                                      <a href="cake.html" class="yyy">Teddy Bears</a><br>
+                                      <a href="cake.html" class="kiuj">Hampers</a><br>
+                                      <a href="cake.html" class="wqws">Cards</a><br>
+                                  </h2>
+                              </div> 
+                          </div>
+                      </div>
+                      <div class="custom-dropppdown">
+                          <button class="nooone">Occasions</button>
+                        <div id="caDropdown" class="dropppdown-content">
+                                <h2> 
+                                    <a href="cake.html" class="hgb">Birthday</a><br>
+                                    <a href="cake.html" class="lok">Anniversary</a><br>
+                                    <a href="cake.html" class="kok">Valentine</a><br>
+                                    <a href="cake.html" class="fre">Christmas</a><br>
+                                    <a href="cake.html" class="yyy">Mother's day</a><br>
+                                    <a href="cake.html" class="kiuj">Father's day</a><br>
+                                    <a href="cake.html" class="wqws">Catering</a><br>
+                                </h2>
+                            </div> 
+                        </div>
+                      </div>
+                      <a href="faq.html"  class=rtyjui>FAQ</a>
+                      <a href="register.html" class="rji">REGISTER</a>
+                      <div class="custom-dropppdown">
+                          <img src="search.png" class="werdf">
+                        <div id="caDDropdown" class="gtf">
+                                <h2 class="lopi"> 
+                                  <div class="search-container">
+                                      <input type="text" id="search-input" class="frg" placeholder="Search...">
+                                    </div>
+                                    
+                                    <div id="search-results" class="results-container">
+                                    </div>
+                                    
+                                    <script>
+                          
+                                      const searchInput = document.getElementById('search-input');
+                                      const searchResults = document.getElementById('search-results');
+                                      searchInput.addEventListener('keyup', (event) => {
+                                        if (event.key === 'Enter') {
+                      
+                                          const query = searchInput.value.trim().toLowerCase();
+                                          
+                                          // Clear previous search results
+                                          searchResults.innerHTML = '';
+                                      
+                                          // Perform search and display results
+                                          if (query) {
+                                            // Replace this with your actual search logic
+                                            const results = performSearch(query);
+                                            displayResults(results);
+                                          }
+                                        }
+                                      });
+                                    
+                                      // Function to simulate search (replace with your actual search logic)
+                                      function performSearch(query) {
+                                        const data = [
+                                          'clothes',
+                                          'Result 2',
+                                          'Result 3'
+                                          // Add more search data here
+                                        ];
+                                    
+                                        // Simulate searching for the query in the data
+                                        return data.filter(result => result.toLowerCase().includes(query));
+                                      }
+                                    
+                                      // Function to display search results
+                                      function displayResults(results) {
+                                        if (results.length === 0) {
+                                          searchResults.innerHTML = 'No results found.';
+                                        } else {
+                                          results.forEach(result => {
+                                            const resultElement = document.createElement('p');
+                                    
+                                            // If the result is 'clothes', make it a link to view all.html
+                                            if (result === 'clothes') {
+                                              const linkElement = document.createElement('a');
+                                              linkElement.href = 'View All.html'; // Replace with the correct URL
+                                              linkElement.textContent = result;
+                                              resultElement.appendChild(linkElement);
+                                            } else {
+                                              resultElement.textContent = result;
+                                            }
+                                    
+                                            searchResults.appendChild(resultElement);
+                                          });
+                                        }
+                                      }
+                                    </script>
+                                  
+                                </h2>
+                            </div> 
+                        </div>
+                      </div>
+                      <a href="contact.html"class="fews" ><button class="sedrf">Contact Us</button></a>
+                      <img src="shopping icon.png" class="sty">
+                      </h2>
+                </h1> 
+<img src="cake1.PNG" class="c1">
+<a href="cake2.html" class="c1p">chocolate cake</a>
+<div class="ytr">
+        <h21 class="qwa">Important Links</h21> <br>                       
+        <h22 class="rfv"><a href="register.html" class="rde">Login</a> </h22> <h23 class="yhn"> Email: oretopcakesnevent.com</h23><br>
+        <h24 class="ert"><a href="contact.html" class="rde">Owners Info </a></h24>  <h25 class="nmn"> Call/WhatsApp: +2348030424506</h25><br>
+        <h26 class="hgf"><a href="register.html" class="rde">Delivery</a></h26>  <h27 class="vcv">Address: 3,ogungbo lane,Opp Laspotech, Lagos</h27> <br>
+        <h28 class="jkl"><a href="register.html" class="rde">Gifts Delivery</a></h28>  <h29 class="wesa"> Payment Options – Direct Transfer,cash</h29> <br>                
+        <h30 class="jbn"><a href="register.html" class="rde">Blog</a> </h30>  <h31 class="dgr">Bank Name: moniepoint,</h31><br> 
+        <h32 class="dfr"><a href="register.html" class="rde">Cart</a></h32>  <h33 class="wsd">Account Name :Oretopcakesnevent</h33><br> 
+        <h34 class="ghj"><a href="contact.html" class="rde">Contact Us</a></h34>  <h35 class="kiu">Naira Account : 1024347270</h35><br> 
+        <img src="palm.jfif" class="swd"><img src="mc.png" class="tgf"><img src="visa.jpg" class="yu"><img src="monie.jfif" class="tgh">
+            <h36 class="rfrf">Copyright © Oretopcakesnevent - Cakes, Flowers and Gifts shop in Lagos, Nigeria.</h36>
+           </div>
+        </div> 
+        
+        </body>
+</html>
+
+<audio controls>
+    <source src="jamiu.m3.mp3" type="audio/mp3">
+</audio>
